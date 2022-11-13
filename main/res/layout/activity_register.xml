@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Register">
+<!--
+<androidx.appcompat.widget.Toolbar
+    android:id="@+id/regToolbar"
+        style="@style/Widget.MaterialComponents.Toolbar.Primary"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:title="Register"
+    />
+    -->
+
+    <TextView
+        android:id="@+id/Register"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:gravity="center"
+        android:text="Register"
+        android:textColor="#0E3510"
+        android:textSize="32sp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/Name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/Register"
+        android:layout_marginTop="20dp" />
+       <!-- android:hint="@string/Ime"
+        android:textColorHint="@color/white"
+        />
+-->
+
+    <EditText
+        android:id="@+id/mailReg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/Name"
+        android:layout_marginTop="20dp"
+        android:textColorHint="@color/white"
+         />
+
+    <EditText
+        android:id="@+id/passReg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/mailReg"
+        android:layout_marginTop="20dp"
+        android:textColorHint="@color/white"
+        android:inputType="textPassword"
+        android:minHeight="48dp" />
+
+    <EditText
+        android:id="@+id/editTextPhone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/passReg"
+        android:ems="10"
+        android:inputType="phone"
+        android:textColorHint="@color/white"/>
+
+    <Spinner
+        android:id="@+id/spinner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/editTextPhone"
+        android:layout_marginTop="20dp"
+        android:entries="@array/TipKorisnik"
+        android:minHeight="48dp"
+        android:padding="10dp"
+        android:prompt="@string/choose_user"
+        android:spinnerMode="dialog" />
+
+    <Button
+        android:id="@+id/Registracija"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/spinner"
+        android:layout_marginTop="20dp"
+        android:onClick="Registered"
+        android:text="@string/Registracija" />
+
+
+</RelativeLayout>

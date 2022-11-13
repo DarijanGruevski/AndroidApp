@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <Spinner
+        android:id="@+id/Food"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:entries="@array/Food"
+        />
+
+    <EditText
+        android:id="@+id/description"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/Food"
+        android:layout_marginTop="30dp"
+        android:hint="Customize your meal" />
+
+    <TextView
+        android:id="@+id/schedule"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Schedule delivery"
+        android:layout_below="@id/description"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        android:layout_marginLeft="113dp"
+        android:layout_marginTop="15dp"
+        />
+
+    <TextView
+        android:id="@+id/typeofdelivery"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/schedule"
+        android:text="How would you like your meal to be delivered?"
+        android:layout_marginTop="20dp"
+        android:textSize="19sp"
+        android:textStyle="bold"
+        android:layout_marginLeft="10dp"
+        />
+    <RadioGroup
+        android:id="@+id/Radiogroup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_below="@id/typeofdelivery"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/Delivertodoor"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/Radiogroup"
+            android:layout_marginTop="15dp"
+            android:layout_marginBottom="10dp"
+            android:text="Delivered to your door"
+            android:checked="true"
+            />
+        <RadioButton
+            android:id="@+id/Pickup"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/typeofdelivery"
+            android:layout_marginTop="15dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="90dp"
+            android:text="Pick-up"
+            />
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/textLocation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/Radiogroup"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="173dp"
+        android:text="Location"
+        android:textStyle="bold"
+        android:textSize="19sp"
+        />
+
+    <ImageButton
+        android:id="@+id/Lokacija"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/Radiogroup"
+        android:layout_alignTop="@id/textLocation"
+        android:layout_marginLeft="200dp"
+        android:layout_marginTop="52dp"
+        android:background="@color/white"
+        android:onClick="selectLocation"
+        android:src="@drawable/ic_baseline_add_location_24" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/Radiogroup"
+        android:layout_marginLeft="160dp"
+        android:layout_marginTop="60dp"
+        android:layout_alignTop="@id/Lokacija"
+        android:onClick="saveActivity"
+        android:text="Send Order"
+        />
+</RelativeLayout>

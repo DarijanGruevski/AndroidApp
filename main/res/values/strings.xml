@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">Individual Project</string>
+    <string name="choose_user">Pick Type</string>
+    <string name="Registracija">Register</string>
+
+    <string-array name="TipKorisnik">
+        <item>Customer</item>
+        <item>Orders</item>
+    </string-array>
+
+    <string-array name="Food">
+        <item>Pizza</item>
+        <item>Pasta</item>
+        <item>Burrito</item>
+        <item>Burgers</item>
+    </string-array>
+    <string name="title_activity_location_map">LocationMap</string>
+    <string name="title_activity_maps">MapsActivity</string>
+
+
+</resources>

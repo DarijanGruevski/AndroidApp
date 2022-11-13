@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="Status">status
+        <item>Active</item>
+        <item>Placed</item>
+        <item>Out for delivery</item>
+        <item>Delivered</item>
+    </string-array>
+</resources>
